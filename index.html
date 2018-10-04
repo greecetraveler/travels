@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Banner Rotator</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/banner-rotator.css" rel="stylesheet">
+    <style>
+        body {
+            height:100%;
+        }
+        section {
+            padding-top:100px;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.banner-rotator.js"></script>
+    <script>
+        $(window).load(function() {
+            $('#myRotator').bannerRotator({
+                width:1000,
+                height:400,
+                cpanelPosition:'center bottom',
+                navButtons:'large',
+                navThumbs:true,
+                tooltip:'image',
+                depth:'auto',
+                kbEffect:'random'
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <section>
+        <div id="myRotator" class="banner-rotator shadow">
+            <ul class="slides">
+                <li data-effect="rotate">
+                    <a href="http://www.codecanyon.net/webtako" target="_blank">
+                        <img src="images/spacer.png" data-src="https://www.lifo.gr/uploads/image/1037505/paros.jpg" title="architecture" alt=""/>
+                    </a>
+                    <h3 data-transition="flipUp 500 linear" data-effect-out="flipDown"
+                        style="top:30px;left:30px;background:#000;width:auto;height:auto;letter-spacing:20px;padding:5px 0 5px 20px;">
+                        ΠΑΡΟΣ 
+                    </h3>
+                    <h3 data-transition="flipDown 500 linear 400" data-effect-out="flipUp"
+                        style="top:95px;left:30px;background:#000;width:auto;height:auto;letter-spacing:20px;padding:5px 0 5px 20px;">
+                        Η ΓΟΗΤΕΙΑ 
+                    </h3>
+                    <h3 data-transition="flipUp 500 linear 800" data-effect-out="flipDown"
+                        style="top:160px;left:30px;background:#000;width:auto;height:auto;letter-spacing:20px;padding:5px 0 5px 20px;">
+                        ΠΟΥ ΣΕ ΤΑΞΙΔΕΥΕΙ
+                    </h3>
+                    <h3 data-transition="spinInRight 500 linear 1200" data-effect-out="spinOutRight"
+                        style="top:225px;left:30px;background:#000;width:auto;height:auto;letter-spacing:20px;padding:5px 0 5px 20px;">
+                        <a href="#">ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                    </h3>
+                </li>
+                <li data-effect="rotate" data-columns="6" data-direction="down" data-alternate="true" data-depth="0">
+                    <a href="http://www.codecanyon.net/webtako" target="_blank">
+                        <img src="images/spacer.png" data-src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_900,c_fill,g_auto,h_506,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F160504100639-naxos-aerial.jpg"  title="3D abstract art" alt=""/>
+                    </a>
+                    <h1 data-transition="slideDown 500 swing 0" data-effect-out='slideDown' 
+                        style="top:145px;left:20px;width:auto;height:auto;color:#fff;text-shadow:1px 1px 2px rgba(0,0,0,0.2);">
+                        ΝΑΞΟΣ KATI
+                    </h1>
+                    <h3 data-transition="flipDown 500 swing 0" data-transition-out="flipDown 500 swing 1000"
+                        style="top:215px;left:25px;width:auto;height:auto;background:#00ccff;background:rgba(0,204,255,0.95);padding:5px 15px;">
+                        ΑΠΟ 
+                    </h3>
+                    <h3 data-transition="flipDown 500 swing 2000" data-transition-out="flipDown 500 swing 1000"
+                        style="top:215px;left:25px;width:auto;height:auto;background:#9966ff;background:rgba(153,102,255,0.95);padding:5px 15px;">
+                        ΠΑΡΑΛΙΕΣ
+                    </h3>
+                    <h3 data-transition="flipDown 500 swing 4000" data-transition-out="flipDown 500 swing"
+                        style="top:215px;left:25px;width:auto;height:auto;background:#99ff00;background:rgba(153,255,0,0.95);padding:5px 15px;">
+                        <a href="#">ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                    </h3>
+                </li>
+                <li data-effect="flip" data-rows="5" data-direction="down" data-order="down" data-depth="1000" data-shape-depth="10">
+                    <a href="http://www.codecanyon.net/webtako" target="_blank">
+                        <img src="images/spacer.png" data-src="https://lonelyplanetwp.imgix.net/2017/10/Little-Venice-Mykonos-d44e39320bbe.jpg?fit=min&q=40&sharp=10&vib=20&w=1470"  title="krazy kartoons" alt=""/>
+                    </a>
+                    <h1 data-transition='zoomIn 500 swing 0' data-effect-out='fade' 
+                        style='top:40px;right:25px;width:auto;height:auto;background:#0e65d5;box-shadow:0 0 3px rgba(0,0,0,.75);padding:10px;'>
+                        ΜΕΡΙΚΕΣ 
+                    </h1>
+                    <h4 data-transition='zoomIn 500 swing 400' data-effect-out='fade' 
+                        style='top:110px;right:45px;width:auto;height:auto;background:#fff;color:#333;box-shadow:0 0 3px rgba(0,0,0,.75);padding:10px;'>
+                        ΜΑΓΕΥΤΙΚΕΣ 
+                    </h4>
+                    <h4 data-transition='zoomIn 500 swing 800' data-effect-out='fade' 
+                        style='top:160px;right:65px;width:auto;height:auto;background:#fff;color:#333;box-shadow:0 0 3px rgba(0,0,0,.75);padding:10px;'>
+                        ΣΤΙΓΜΕΣ
+                    </h4>
+                    <h4 data-transition='zoomIn 500 swing 1200' data-effect-out='fade' 
+                        style='top:210px;right:25px;width:auto;height:auto;background:#fff;color:#333;box-shadow:0 0 3px rgba(0,0,0,.75);padding:10px;'>
+                        ΑΠΟ ΤΗΝ ΠΑΝΕΜΟΡΦΗ ΜΥΚΟΝΟ
+                    </h4>
+                    <h4 data-transition='zoomIn 500 swing 1600' data-effect-out='fade' 
+                        style='top:260px;right:65px;width:auto;height:auto;background:#fff;color:#333;box-shadow:0 0 3px rgba(0,0,0,.75);padding:10px;'>
+                        <a href="#">ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                    </h4>
+                </li>
+                <li data-effect="flip" data-columns="5" data-rows="3" data-direction="random" data-order="downRight" data-depth="1000">
+                    <a href="http://www.codecanyon.net/webtako" target="_blank">
+                        <img src="images/spacer.png" data-src="https://www.discovergreece.com/~/media/images/highlight-large-images/az/a/antiparos/little-islet-with-traditional-chapel-antiparos.ashx"  title="say it in print" alt=""/>
+                    </a>
+                    <h2 data-transition='slideUp 500 swing 0' data-transition-out='slideUp'
+                        style='top:20px;left:20px;width:auto;height:auto;color:#fff;background:#3095fc;padding:10px;'>
+                        ΣΥΝΑΡΠΑΣΤΙΚΑ
+                    </h2>
+                    <h4 data-transition='slideLeft 500 swing 500' data-transition-out='slideLeft'
+                        style='top:90px;left:20px;width:auto;height:auto;color:#333;background:#fff;background:rgba(255,255,255,0.9);padding:10px;'>
+                        ΤΟΠΙΑ
+                    </h4>
+                    <h4 data-transition='slideRight 500 swing 500' data-transition-out='slideRight'
+                        style='top:140px;left:20px;width:auto;height:auto;color:#333;background:#fff;background:rgba(255,255,255,0.9);padding:10px;'>
+                        ΑΠΟ ΤΗΝ ΕΝΤΥΠΩΣΙΑΚΗ
+                    </h4>
+                    <h4 data-transition='slideLeft 500 swing 500' data-transition-out='slideLeft'
+                        style='top:190px;left:20px;width:auto;height:auto;color:#333;background:#fff;background:rgba(255,255,255,0.9);padding:10px;'>
+                        ΑΝΤΙΠΑΡΟ 
+                    </h4>
+                    <h4 data-transition='slideRight 500 swing 500' data-transition-out='slideRight'
+                        style='top:240px;left:20px;width:auto;height:auto;color:#333;background:#fff;background:rgba(255,255,255,0.9);padding:10px;'>
+                        <a href="#">ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                    </h4>
+                </li>
+                <li data-effect="zoom">
+                    <a href="http://www.codecanyon.net/webtako" target="_blank">
+                        <img src="images/spacer.png" data-src="http://www.lesvosnews.net/sites/default/files/basic_article_photos/11mitilini.jpg"  title="3D abstract art" alt=""/>
+                    </a>
+                    <h2 data-transition='fade 500 swing 0' data-effect-out='zoomOut'
+                        style="top:45px;right:15px;width:auto;height:auto;background:#0054ff;background:rgba(0,84,255,0.7);padding:10px;">
+                        TRAVEL ΝΑVIGATOR ΣΤΗΝ
+                    </h2>
+                    <h4 data-transition='fade 500 swing 600' data-effect-out='zoomOut'
+                        style='top:110px;right:15px;width:auto;height:auto;background:#000;background:rgba(0,0,0,0.75);padding:10px;'>
+                        ΠΑΝΕΜΟΡΦΗ
+                    </h4>
+                    <h4 data-transition='fade 500 swing 300' data-effect-out='zoomOut'
+                        style='top:160px;right:15px;width:auto;height:auto;background:#000;background:rgba(0,0,0,0.75);padding:10px;'>
+                        ΜΥΤΙΛΙΝΗ
+                    </h4>
+                    <h4 data-transition='fade 500 swing 900' data-effect-out='zoomOut'
+                        style='top:210px;right:15px;width:auto;height:auto;background:#000;background:rgba(0,0,0,0.75);padding:10px;'>
+                       <a href="#">ΔΙΑΒΑΣΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                    </h4>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+    <br/>
+    <hr/>
+    <footer>
+        <div class="col-md-12">
+            <p class="pull-right">copyright &copy; 2015 webtako</p>
+            <p><a href="http://codecanyon.net/user/webtako?ref=webtako" target="_blank">envato</a> / <a href="http://www.twitter.com/webtako" target="_blank">twitter</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
